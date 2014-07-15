@@ -16,5 +16,7 @@ class Triangle
 	def scalene?
 		((@a_side * @a_side) + (@b_side * @b_side)) == (@c_side * @c_side)
 	end
-
+	def equilateral?
+		(@a_side == @b_side) && (@b_side == @c_side)
+	end
 end
