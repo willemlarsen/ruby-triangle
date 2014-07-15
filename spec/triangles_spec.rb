@@ -19,3 +19,14 @@ describe 'Triangle' do
 		expect(test_triangle.type).to eq("Isosceles triangle")
 	end
 end
+
+describe 'garbage_name' do
+	it 'another_garbage_name' do
+		test_triangle = Triangle.new(5, 4, 3)
+		expect(test_triangle.scalene?).to be(true)
+
+	end
+	# 5, 4, 2
+	#1, 2, 1
+	# 2, 1, 1
+end

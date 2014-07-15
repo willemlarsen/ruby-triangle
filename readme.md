@@ -1,6 +1,6 @@
 # Ruby Triangle
 
-This li'l guy uses ruby to accept input for the dimensions of a given triangle, and spit back whether it is a right, scalene, or isosceles triangle.
+This li'l guy uses ruby to accept input for the dimensions of a given triangle, and spit back whether it is a equilateral, scalene, or isosceles triangle.
 
 I'm Willem Larsen - hope you have fun playing with this.
 
