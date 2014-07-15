@@ -10,7 +10,7 @@ class Triangle
 			"Scalene triangle"
 		elsif equilateral?
 			"Equilateral triangle"
-		else
+		elsif isosceles?
 			"Isosceles triangle"
 		end
 	end
@@ -21,5 +21,8 @@ class Triangle
 
 	def equilateral?
 		(@a_side == @b_side) && (@b_side == @c_side)
+	end
+	def isosceles?
+		!scalene? && !equilateral?
 	end
 end
