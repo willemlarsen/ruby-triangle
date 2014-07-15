@@ -8,13 +8,14 @@ describe 'Triangle' do
 	end
 	it 'identifies scalene triangles' do
 		test_triangle = Triangle.new(3, 4, 5)
-		expect(test_triangle.type).to eq("Right triangle")
+		expect(test_triangle.type).to eq("Scalene triangle")
 	end
 	it 'identifies equilateral triangles' do
 		test_triangle = Triangle.new(1, 1, 1)
-		expect(test_triangle.type).to eq("Isosceles triangle")
+		expect(test_triangle.type).to eq("Equilateral triangle")
 	end
 	it 'identifies isosceles triangles' do
-		test_triangle = Triangle.new(1, 1, 1)
-
+		test_triangle = Triangle.new(1, 1, 2)
+		expect(test_triangle.type).to eq("Isosceles triangle")
+	end
 end

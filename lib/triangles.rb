@@ -7,8 +7,10 @@ class Triangle
 	def type
 	 	if ((@a_side * @a_side) + (@b_side * @b_side)) == (@c_side * @c_side)
 			"Scalene triangle"
-		else
+		elsif (@a_side == @b_side) && (@b_side == @c_side)
 			"Equilateral triangle"
+		else
+			"Isosceles triangle"
 		end
 	end
 end
