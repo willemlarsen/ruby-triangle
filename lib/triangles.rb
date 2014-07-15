@@ -4,17 +4,22 @@ class Triangle
 		@b_side = b_side
 		@c_side = c_side
 	end
+
 	def type
 	 	if scalene?
 			"Scalene triangle"
-		elsif (@a_side == @b_side) && (@b_side == @c_side)
+		elsif equilateral?
 			"Equilateral triangle"
 		else
 			"Isosceles triangle"
 		end
 	end
+
 	def scalene?
 		((@a_side * @a_side) + (@b_side * @b_side)) == (@c_side * @c_side)
 	end
 
+	def equilateral?
+		(@a_side == @b_side) && (@b_side == @c_side)
+	end
 end
