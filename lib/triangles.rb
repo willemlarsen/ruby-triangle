@@ -5,7 +5,7 @@ class Triangle
 		@c_side = c_side
 	end
 	def type
-	 	if ((@a_side * @a_side) + (@b_side * @b_side)) == (@c_side * @c_side)
+	 	if scalene?
 			"Scalene triangle"
 		elsif (@a_side == @b_side) && (@b_side == @c_side)
 			"Equilateral triangle"
@@ -13,4 +13,8 @@ class Triangle
 			"Isosceles triangle"
 		end
 	end
+	def scalene?
+		((@a_side * @a_side) + (@b_side * @b_side)) == (@c_side * @c_side)
+	end
+
 end
